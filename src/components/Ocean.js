@@ -1,11 +1,15 @@
 import React from "react";
 import "./Ocean.css";
 
-export default function Ocean() {
-    return (
-        <div className="ocean">
-            <div className="wave"></div>
-            <div className="wave"></div>
-        </div>
-    );
+class Ocean extends React.Component {
+    render() {
+        return (
+            <div className="ocean" style={{ height: this.props.seaHeight }}>
+                <div className="wave"></div>
+                <div className="wave"></div>
+            </div>
+        );
+    }
 }
+
+export default Ocean
