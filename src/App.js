@@ -18,7 +18,7 @@ class App extends React.Component {
 
   }
   onYearChange = value => {
-    this.setState({seaHeight: (value-1990)/30 + "%"})
+    this.setState({seaHeight: (value-1990)/40 * 100 + "%"})
   }
   render() {
     return (
