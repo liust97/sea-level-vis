@@ -1,13 +1,15 @@
-import React from "react";  
+import React from "react";
 import "./App.css";
 import Ocean from "./components/Ocean";
-import Thermometer from "./components/Thermometer";
+import Thermo from "./components/Thermo";
+import BgParticles from "./components/BgParticles"
 import { Slider } from 'antd';
+import { Row, Col } from 'antd';
 
 const data = require('./static/nasa_data.json');
 const initialYear = 2019
 class App extends React.Component {
-  
+
   constructor(props) {
     super(props);
     this.state = {
@@ -24,11 +26,12 @@ class App extends React.Component {
   }
   setBackgroundColor(value) {
     // h from 200 to 360, 
-    const bcolor = `hsl(${26.4-80.6*this.state.temp}, 100%, 67%)`;
+    const bcolor = `hsl(${65 - 70 * this.state.temp}, 100%, 75%)`;
     document.getElementsByTagName('body')[0].style.backgroundColor = bcolor
   }
   onYearChange = value => {
-    this.setState({year: value,
+    this.setState({
+      year: value,
       co2: parseFloat(data[value]["co2"]),
       temp: parseFloat(data[value]["temp"]),
       arctic: parseFloat(data[value]["arctic"]),
@@ -40,6 +43,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App container">
+
+
+        <BgParticles co2={this.state.co2}></BgParticles>
         <Slider
           min={1993}
           max={2019}
@@ -48,14 +54,12 @@ class App extends React.Component {
           onChange={this.onYearChange}
           tooltipVisible
         />
-        <Thermometer temp={this.state.temp} />
         <p className="year">{this.state.year}</p>
-        <p>{this.state.co2}</p>
+        <Thermo temp={this.state.temp} co2={this.state.co2}/>
         <Ocean sealevel={this.state.sealevel} />
       </div>
     );
   }
-
 }
 
 export default App;
