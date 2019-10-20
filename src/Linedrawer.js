@@ -20,7 +20,7 @@ class Linedrawer extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{position:"absolute", right: 15, top: 50}}>
         <Button type="primary" onClick={this.showDrawer}>
           Open
         </Button>
