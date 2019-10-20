@@ -4,7 +4,8 @@ import { Navbar } from "react-bootstrap";
 import "./App.css";
 import Routes from "./Routes";
 import Ocean from "./components/Ocean";
-import { Slider } from 'antd';
+import { Slider, Drawer } from 'antd';
+import Linedrawer from "./Linedrawer";
 
 const data = require('./static/nasa_data.json');
 const initialYear = 2019
@@ -41,6 +42,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App container">
+        <Linedrawer/>
         <Slider
           min={1993}
           max={2019}
@@ -57,6 +59,10 @@ class App extends React.Component {
     );
   }
 
+
+  newMethod() {
+    return <drawer />;
+  }
 }
 
 export default App;
