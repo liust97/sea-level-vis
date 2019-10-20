@@ -11,6 +11,8 @@ body {
   bottom:0;
   left:0;
   background: #015871;
+  z-index: -1;
+  transition: height .5s;
 }
 
 .wave {
@@ -21,6 +23,7 @@ body {
   height: 198px;
   animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
+  z-index: -1;
 }
 
 .wave:nth-of-type(2) {
