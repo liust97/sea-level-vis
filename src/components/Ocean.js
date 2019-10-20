@@ -3,7 +3,7 @@ import "./Ocean.css";
 
 class Ocean extends React.Component {
     getPercentage (sealevel) {
-        return (sealevel + 37.55)/120 * 100 + "%"
+        return (sealevel + 37.55)/160 * 100 + "%"
     }
     render() {
         return (

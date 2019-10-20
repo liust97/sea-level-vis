@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react";  
 import { Link } from "react-router-dom";
 import { Navbar } from "react-bootstrap";
 import "./App.css";
@@ -15,7 +15,10 @@ class App extends React.Component {
     this.state = {
       year: initialYear,
       co2: parseInt(data[initialYear]["co2"]),
-      sealevel: parseInt(data[initialYear]["sealevel"])
+      temp: parseInt(data[initialYear]["temp"]),
+      arctic: parseInt(data[initialYear]["arctic"]),
+      sealevel: parseInt(data[initialYear]["sealevel"]),
+      greenland: parseInt(data[initialYear]["greenland"])
     };
     this.setBackgroundColor(initialYear);
     this.onYearChange.bind(this);

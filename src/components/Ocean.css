@@ -33,9 +33,12 @@ body {
 }
 
 .des {
-    color: white;
-    font-size: 3em;
-    transform:translate(0,-2em)
+    color: rgb(186, 221, 230);
+    font-size: 2em;
+    position: relative;
+    bottom: 2em;
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 3s infinite  alternate;
 }
 
 @keyframes wave {
@@ -54,4 +57,13 @@ body {
   50% {
     transform: translate3d(0,5px,0);
   }
+}
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-1em); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-1em); }
 }
