@@ -1,0 +1,191 @@
+{
+    "1993": {
+      "sealevel": -37.55,
+      "temp": 0.33,
+      "co2": 354.03,
+      "arctic": 4.58,
+      "greenland": ""
+    },
+    "1994": {
+      "sealevel": -30.41,
+      "temp": 0.34,
+      "co2": 355.73,
+      "arctic": 5.13,
+      "greenland": ""
+    },
+    "1995": {
+      "sealevel": -24.97,
+      "temp": 0.37,
+      "co2": 358.17,
+      "arctic": 4.43,
+      "greenland": ""
+    },
+    "1996": {
+      "sealevel": -26.34,
+      "temp": 0.4,
+      "co2": 359.54,
+      "arctic": 5.62,
+      "greenland": ""
+    },
+    "1997": {
+      "sealevel": -24.68,
+      "temp": 0.42,
+      "co2": 360.29,
+      "arctic": 4.89,
+      "greenland": ""
+    },
+    "1998": {
+      "sealevel": -19.89,
+      "temp": 0.45,
+      "co2": 364.02,
+      "arctic": 4.3,
+      "greenland": ""
+    },
+    "1999": {
+      "sealevel": -23.5,
+      "temp": 0.47,
+      "co2": 364.81,
+      "arctic": 4.29,
+      "greenland": ""
+    },
+    "2000": {
+      "sealevel": -14.94,
+      "temp": 0.5,
+      "co2": 367,
+      "arctic": 4.35,
+      "greenland": ""
+    },
+    "2001": {
+      "sealevel": -13.43,
+      "temp": 0.52,
+      "co2": 368.18,
+      "arctic": 4.59,
+      "greenland": ""
+    },
+    "2002": {
+      "sealevel": -9.35,
+      "temp": 0.55,
+      "co2": 370.75,
+      "arctic": 4.03,
+      "greenland": -183.43
+    },
+    "2003": {
+      "sealevel": -4.67,
+      "temp": 0.58,
+      "co2": 373.17,
+      "arctic": 4.05,
+      "greenland": -272.43
+    },
+    "2004": {
+      "sealevel": -0.85,
+      "temp": 0.61,
+      "co2": 374.25,
+      "arctic": 4.39,
+      "greenland": -371.72
+    },
+    "2005": {
+      "sealevel": 1.2,
+      "temp": 0.62,
+      "co2": 376.7,
+      "arctic": 4.07,
+      "greenland": -468.3175
+    },
+    "2006": {
+      "sealevel": 4.35,
+      "temp": 0.63,
+      "co2": 378.85,
+      "arctic": 4.01,
+      "greenland": -568.898
+    },
+    "2007": {
+      "sealevel": 5.7,
+      "temp": 0.63,
+      "co2": 380.96,
+      "arctic": 2.82,
+      "greenland": -685.51
+    },
+    "2008": {
+      "sealevel": 5.76,
+      "temp": 0.64,
+      "co2": 383.18,
+      "arctic": 3.26,
+      "greenland": -799.3842857
+    },
+    "2009": {
+      "sealevel": 10.08,
+      "temp": 0.64,
+      "co2": 384.74,
+      "arctic": 3.76,
+      "greenland": -908.52625
+    },
+    "2010": {
+      "sealevel": 15.53,
+      "temp": 0.65,
+      "co2": 386.85,
+      "arctic": 3.34,
+      "greenland": -1050.45
+    },
+    "2011": {
+      "sealevel": 11.54,
+      "temp": 0.66,
+      "co2": 389.08,
+      "arctic": 3.21,
+      "greenland": -1448.77
+    },
+    "2012": {
+      "sealevel": 20.31,
+      "temp": 0.69,
+      "co2": 391.11,
+      "arctic": 2.41,
+      "greenland": -1910.222857
+    },
+    "2013": {
+      "sealevel": 29.64,
+      "temp": 0.74,
+      "co2": 393.45,
+      "arctic": 3.78,
+      "greenland": -2385.666667
+    },
+    "2014": {
+      "sealevel": 28.41,
+      "temp": 0.78,
+      "co2": 395.38,
+      "arctic": 3.74,
+      "greenland": -2914.11
+    },
+    "2015": {
+      "sealevel": 34.98,
+      "temp": 0.83,
+      "co2": 397.63,
+      "arctic": 3.42,
+      "greenland": -3328.68
+    },
+    "2016": {
+      "sealevel": 44.72,
+      "temp": 0.87,
+      "co2": 401.05,
+      "arctic": 2.91,
+      "greenland": -3728.56
+    },
+    "2017": {
+      "sealevel": 43.77,
+      "temp": 0.91,
+      "co2": 403.37,
+      "arctic": 3.35,
+      "greenland": -3691
+    },
+    "2018": {
+      "sealevel": 48.87,
+      "temp": 0.96,
+      "co2": 405.51,
+      "arctic": 3.35,
+      "greenland": ""
+    },
+    "2019": {
+      "sealevel": 52.49,
+      "temp": 0.95,
+      "co2": 408.54,
+      "arctic": 3.13,
+      "greenland": ""
+    }
+  }

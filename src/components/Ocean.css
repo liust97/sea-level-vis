@@ -32,6 +32,12 @@ body {
   opacity: 1;
 }
 
+.des {
+    color: white;
+    font-size: 3em;
+    transform:translate(0,-2em)
+}
+
 @keyframes wave {
   0% {
     margin-left: 0;

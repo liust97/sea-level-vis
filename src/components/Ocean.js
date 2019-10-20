@@ -2,9 +2,13 @@ import React from "react";
 import "./Ocean.css";
 
 class Ocean extends React.Component {
+    getPercentage (sealevel) {
+        return (sealevel + 37.55)/120 * 100 + "%"
+    }
     render() {
         return (
-            <div className="ocean" style={{ height: this.props.seaHeight }}>
+            <div className="ocean" style={{ height: this.getPercentage(this.props.sealevel) }}>
+                <p className="des">Sea Level: {this.props.sealevel}mm</p>
                 <div className="wave"></div>
                 <div className="wave"></div>
             </div>

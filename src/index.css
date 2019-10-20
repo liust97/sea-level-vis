@@ -7,7 +7,6 @@ body {
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
 h1, h2, h3, h4, h5, h6 {
