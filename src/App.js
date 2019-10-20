@@ -29,9 +29,12 @@ class App extends React.Component {
     document.getElementsByTagName('body')[0].style.backgroundColor = bcolor
   }
   onYearChange = value => {
-    this.setState({year: value, 
+    this.setState({year: value,
+      co2: parseInt(data[value]["co2"]),
+      temp: parseInt(data[value]["temp"]),
+      arctic: parseInt(data[value]["arctic"]),
       sealevel: parseInt(data[value]["sealevel"]),
-      co2: parseInt(data[value]["co2"])
+      greenland: parseInt(data[value]["greenland"])
     });
     this.setBackgroundColor(value)
   }
