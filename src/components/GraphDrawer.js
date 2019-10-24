@@ -19,7 +19,7 @@ class GraphDrawer extends React.Component {
 
   render() {
     return (
-      <div style={{ margin: "2em" }}>
+      <div style={{ marginRight: "2em", marginTop: "2em" }}>
         <Button type="primary" onClick={this.showDrawer}>
           Data
         </Button>
