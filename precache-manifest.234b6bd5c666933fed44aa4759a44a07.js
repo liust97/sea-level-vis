@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "faab1336c161c8b921c4dd60008a9866",
+    "revision": "6b1462e92f52176db459fd7983b87bb4",
     "url": "/sea-level-visual/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sea-level-visual/static/css/2.d06fc962.chunk.css"
   },
   {
-    "revision": "4c5df65682420a6ed06c",
+    "revision": "1c40cfd7793396714071",
     "url": "/sea-level-visual/static/css/main.ea921ff0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sea-level-visual/static/js/2.55ed69d2.chunk.js"
   },
   {
-    "revision": "4c5df65682420a6ed06c",
-    "url": "/sea-level-visual/static/js/main.95b9733a.chunk.js"
+    "revision": "1c40cfd7793396714071",
+    "url": "/sea-level-visual/static/js/main.55640657.chunk.js"
   },
   {
     "revision": "afa2c0a2cb043c064486",
