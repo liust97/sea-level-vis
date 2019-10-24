@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
 import Ocean from "./components/Ocean";
-import { Slider, Drawer } from 'antd';
+import { Slider, Row, Col } from 'antd';
 import Linedrawer from "./Linedrawer";
-import Thermo from "./components/Thermo";
+import Dashboard from "./components/Dashboard";
 import BgParticles from "./components/BgParticles"
 
 const data = require('./static/nasa_data.json');
@@ -26,7 +26,7 @@ class App extends React.Component {
   }
   setBackgroundColor(value) {
     // h from 200 to 360, 
-    const bcolor = `hsl(${65 - 70 * this.state.temp}, 100%, 75%)`;
+    const bcolor = `hsl(${65 - 70 * parseFloat(data[value]["temp"])}, 100%, 75%)`;
     document.getElementsByTagName('body')[0].style.backgroundColor = bcolor
   }
   onYearChange = value => {
@@ -42,20 +42,33 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div className="App container">
+      <div className="App">
 
         <BgParticles co2={this.state.co2}></BgParticles>
-        <Linedrawer/>
-        <Slider
-          min={1993}
-          max={2019}
-          defaultValue={initialYear}
-          value={this.state.year}
-          onChange={this.onYearChange}
-          tooltipVisible
-        />
-        <p className="year">{this.state.year}</p>
-        <Thermo temp={this.state.temp} co2={this.state.co2}/>
+        <div
+          className="slider">
+          <Slider
+            min={1993}
+            max={2019}
+            defaultValue={initialYear}
+            value={this.state.year}
+            onChange={this.onYearChange}
+          />
+        </div>
+        <Row type="flex" justify="space-between" >
+          <Col span={4}>
+
+            <Dashboard temp={this.state.temp} co2={this.state.co2} />
+          </Col>
+          <Col span={16}>
+
+            <p className="year">{this.state.year}</p>
+          </Col>
+          <Col span={4}>
+
+            <Linedrawer />
+          </Col>
+        </Row>
         <Ocean sealevel={this.state.sealevel} />
       </div>
     );

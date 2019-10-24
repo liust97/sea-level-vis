@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 import { Drawer, Button } from 'antd';
 import App from "./App";
 import Linechart from "./components/Linechart";
@@ -20,9 +20,9 @@ class Linedrawer extends React.Component {
 
   render() {
     return (
-      <div style={{position:"absolute", right: 15, top: 50}}>
+      <div>
         <Button type="primary" onClick={this.showDrawer}>
-          Open
+          Data
         </Button>
         <Drawer
           title="Data Visualization"
@@ -30,11 +30,19 @@ class Linedrawer extends React.Component {
           closable={false}
           onClose={this.onClose}
           visible={this.state.visible}
-          height = "700"
-          width = "700"
+          width="700"
         >
-            <Linechart/>
-           
+        <Button
+          style={{
+            marginRight: 8,
+            float:"right"
+          }}
+          onClick={this.onClose}
+        >
+          close
+          </Button>
+          <Linechart />
+
         </Drawer>
       </div>
     );
