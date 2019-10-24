@@ -9,6 +9,14 @@ import BgParticles from "./components/BgParticles"
 
 const data = require('./static/nasa_data.json');
 const initialYear = 2019
+const marks = {
+  1993: '1993',
+  2000: '2000',
+  2010: '2010',
+  2019: {
+    label: <strong>Now</strong>,
+  },
+};
 class App extends React.Component {
 
   constructor(props) {
@@ -54,6 +62,7 @@ class App extends React.Component {
             defaultValue={initialYear}
             value={this.state.year}
             onChange={this.onYearChange}
+            marks={marks}
           />
         </div>
         <Row type="flex" justify="space-between" >

@@ -27,9 +27,9 @@ class AboutDrawer extends React.Component {
           closable={true}
           onClose={this.onClose}
           visible={this.state.visible}
-          width="700"
+          width="350"
         >
-            <p>This website is developed during 2019 NASA’s International Space Apps Challenge,
+            <p>This project is developed during 2019 NASA’s International Space Apps Challenge,
                 by Sitong Liu and Yankun Shen.
             </p>
             <p><a href="https://github.com/liust97/sea-level-visual">Github Link</a></p>
