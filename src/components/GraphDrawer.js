@@ -1,9 +1,8 @@
 import React from "react";
 import { Drawer, Button } from 'antd';
-import App from "./App";
-import Linechart from "./components/Linechart";
+import Linechart from "./Linechart";
 
-class Linedrawer extends React.Component {
+class GraphDrawer extends React.Component {
   state = { visible: false };
 
   showDrawer = () => {
@@ -20,27 +19,18 @@ class Linedrawer extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{ margin: "2em" }}>
         <Button type="primary" onClick={this.showDrawer}>
           Data
         </Button>
         <Drawer
           title="Data Visualization"
           placement="right"
-          closable={false}
+          closable={true}
           onClose={this.onClose}
           visible={this.state.visible}
           width="700"
         >
-        <Button
-          style={{
-            marginRight: 8,
-            float:"right"
-          }}
-          onClick={this.onClose}
-        >
-          close
-          </Button>
           <Linechart />
 
         </Drawer>
@@ -51,4 +41,4 @@ class Linedrawer extends React.Component {
 
 // ReactDOM.render(<lineDrawer />, mountNode);
 
-export default Linedrawer;
+export default GraphDrawer;

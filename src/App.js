@@ -2,7 +2,8 @@ import React from "react";
 import "./App.css";
 import Ocean from "./components/Ocean";
 import { Slider, Row, Col } from 'antd';
-import Linedrawer from "./Linedrawer";
+import GraphDrawer from "./components/GraphDrawer";
+import AboutDrawer from "./components/AboutDrawer";
 import Dashboard from "./components/Dashboard";
 import BgParticles from "./components/BgParticles"
 
@@ -65,8 +66,10 @@ class App extends React.Component {
             <p className="year">{this.state.year}</p>
           </Col>
           <Col span={4}>
-
-            <Linedrawer />
+            <div style={{ textAlign: "right" }}>
+              <GraphDrawer />
+              <AboutDrawer />
+            </div>
           </Col>
         </Row>
         <Ocean sealevel={this.state.sealevel} />
